@@ -9,16 +9,16 @@ class Solution:
     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         st = []
         result = []
-        child = None
+        last_visited = None
         current = root
         while st or current:
             while current:
                 st.append(current)
                 current = current.left
             current = st.pop()
-            if current.right==None or current.right == child:
+            if current.right==None or current.right == last_visited:
                 result.append(current.val)
-                child = current
+                last_visited = current
                 current =  None
             else:
                 st.append(current)
