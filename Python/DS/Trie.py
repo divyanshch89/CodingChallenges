@@ -10,6 +10,7 @@ class Trie:
         
 
     def insert(self, word: str) -> None:
+        #TC - O(N), N is the len of word
         current = self.root
         for c in word:
             node = current.children[c] if c in current.children else None
@@ -23,6 +24,7 @@ class Trie:
 
     def search(self, word: str) -> bool:
         #whole word should be present in the trie
+        #TC - O(N), N is the len of the word
         current = self.root
         for c in word:
             node = current.children[c] if c in current.children else None

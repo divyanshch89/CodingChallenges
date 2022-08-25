@@ -1,5 +1,5 @@
 #Link  - https://leetcode.com/problems/product-of-array-except-self/
-from ast import List
+from typing import List
 
 
 class Solution:
