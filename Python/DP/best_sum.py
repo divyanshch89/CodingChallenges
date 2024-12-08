@@ -34,5 +34,5 @@ print(bestSum(7,[5,3,4,7],{})) #[7]
 print(bestSum(8,[2,3,5],{})) #[5,3]
 memo1 = {}
 print(bestSum(8,[1,4,5],memo1)) #[4,4]
-print(memo1)
-# print(bestSum(100,[1,2,5,25],{})) #[25,25,25,25]
+#print(memo1)
+print(bestSum(100,[1,2,5,25],{})) #[25,25,25,25]
