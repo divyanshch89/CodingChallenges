@@ -12,6 +12,7 @@ class Min_Heap:
                 temp[i] = self.items[i]
             self.items = temp
     
+   #calculating indexes is most important
     def getParentIndex(self,index):
         return (index-1)//2
     def getLeftChildIndex(self, index):
